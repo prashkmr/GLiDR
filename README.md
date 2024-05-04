@@ -19,9 +19,6 @@
 
 
 ## News
-- **[April 2024] Inference scripts for video or image to depth.**
-- [March 2024] Pretrained checkpoints for NYUv2 and KITTI datasets.
-- [March 2024] Training and Evaluation code released!
 - [Feb 2024] ECoDepth accepted in CVPR'2024.
 
 
