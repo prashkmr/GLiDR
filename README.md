@@ -36,14 +36,16 @@ conda activate GLiDR
 
 
 ## Dataset Setup
-You can take a look at the dataset preparation guide for NYUv2 and KITTI from [here](https://github.com/cleinc/bts). After downloading the datasets, change the data paths in the respective bash files to point to your dataset location where you have downloaded the datasets. Alternatively, you can also make a symbolic link of the dataset folders like so:
+You can take a look at the dataset preparation guide for NYUv2 and KITTI from [here](https://github.com/cleinc/bts). After downloading the datasets, change the data paths in the respective bash files to point to your dataset location where 
+you have downloaded the datasets. Alternatively, you can also make a symbolic link of the dataset folders like so:
+
+- [CARLA] - The CARLA dataset consists of 15 numpy arrays (0..7 for training and the rest for testing) for training and testing the model. We use the first three numpy arrays(0,1,2) to train the model (due to time intensive persistence computation). We further test the model on 8 (8,9...15) numpy arrays.  For SLAM we use the 4 CARLA SLAM sequences made available.
+- [KITTI] - For KITTI we use the KITTI Odometry sequences for training the model. We transform the 11 sequences into numpy files and make them available here. We use the sequence 8 for testing the model and the rest for training our model For SLAM we use all the Odometry sequences (0 to 10).
+- [ARD-16] - The ARD-16 dataset consists of 4 numpy arrays (0..3). We use three (0..2) numpy arrays for training our model and the fourth numpy array for testing our model.
 ``` bash
-cd depth
-mkdir data
-cd data
-ln -s <path_to_kitti_dataset> kitti
-ln -s <path_to_nyu_dataset> nyu
-```
+
+
+
 Note the dataset structure inside the path you have given in the bash files should look like this:  
 **NYUv2**: 
 ``` bash
