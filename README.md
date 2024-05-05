@@ -44,33 +44,6 @@ For KITTI, we generate the paired correspondence using a novel method that we de
 - [ARD-16] - The ARD-16 dataset consists of 4 numpy arrays (0..3). We use three (0..2) numpy arrays for training our model and the fourth numpy array for testing our model. The data is available [here](https://github.com/dslrproject/dslr/tree/master/Data).
 ``` bash
 
-
-
-Note the dataset structure inside the path you have given in the bash files should look like this:  
-**NYUv2**: 
-``` bash
-nyu
-├── nyu_depth_v2
-│   ├── official_splits
-│   └── sync
-```
-**KITTI**: 
-``` bash
-kitti
-├── KITTI
-│   ├── 2011_09_26
-│   ├── 2011_09_28
-│   ├── 2011_09_29
-│   ├── 2011_09_30
-│   └── 2011_10_03
-└── kitti_gt
-    ├── 2011_09_26
-    ├── 2011_09_28
-    ├── 2011_09_29
-    ├── 2011_09_30
-    └── 2011_10_03
-```
-
 ## Pretrained Models
 
 Please download the pretrained weights from [this link](https://drive.google.com/drive/folders/1BVWLrdHw0bfsuzzL62S7xpWmmqgvysxd?usp=sharing) and save `.ckpt` weights inside `<repo root>/depth/checkpoints` directory.
