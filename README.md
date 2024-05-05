@@ -23,13 +23,18 @@
 
 
 ## Installation
+The code was tested using pytorch 3.9.18. 
+For topology based installation requirement we use the this fantastic [TopologyLayer](https://github.com/bruel-gabrielsson/TopologyLayer) installation. It mostly works out of the box. There may be some issues while installing Dionysus Drivers for persistence calculation. Pleae refer to the [issues](https://github.com/bruel-gabrielsson/TopologyLayer/issues) at the above repository for quick resolution.
 
+Alternatively you may also follow the below conda environment setup.
 ``` bash
 git clone https://github.com/prashkmr/GLiDR
 cd GLiDR
 conda env create -f env.yml
-conda activate ecodepth
+conda activate GLiDR
 ```
+
+
 ## Dataset Setup
 You can take a look at the dataset preparation guide for NYUv2 and KITTI from [here](https://github.com/cleinc/bts). After downloading the datasets, change the data paths in the respective bash files to point to your dataset location where you have downloaded the datasets. Alternatively, you can also make a symbolic link of the dataset folders like so:
 ``` bash
