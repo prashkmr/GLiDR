@@ -19,14 +19,14 @@
 
 
 ## News
-- [Feb 2024] ECoDepth accepted in CVPR'2024.
+- [Feb 2024] GLiDR accepted in CVPR'2024.
 
 
 ## Installation
 
 ``` bash
-git clone https://github.com/Aradhye2002/EcoDepth
-cd EcoDepth
+git clone https://github.com/prashkmr/GLiDR
+cd GLiDR
 conda env create -f env.yml
 conda activate ecodepth
 ```
