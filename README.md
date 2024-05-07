@@ -51,37 +51,57 @@ For KITTI, we generate the paired correspondence using a novel method that we de
 We trained our models on a single NVIDIA A100 GPU. We have 2 version per dataset - sparse and dense for training.  For KITTI and CARLA sparse and dense version consists of 16 and 64 beam respectively. For KITT the sparse and dense version consists of 8 and 16 beams respectively.
 
 1. **Train on KITTI dataset**:  
-  Sparse Version
+Sparse Version
 
-  `cd kitti/`
-  
-   `python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_kitti_sparse --beam 16 --dim 8 --batch_size 32 --mode kitti`
+`cd kitti/`
 
-   Dense Version
+`python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_kitti_sparse --beam 16 --dim 8 --batch_size 32 --mode kitti`
 
-  `cd kitti/`
-  
-  `python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_kitti_dense --beam 64 --dim 8 --batch_size 8 --mode kitti`
+Dense Version
 
-   --beam : Denotes the number of beam that ar allowed in the LiDAR. 
-   --dim  : Sparsifies the outermost dimension of the range image (for CARLA, outermost dimesion is 1024). For more details on this, please refer to Section 5.2 of the paper.
+`cd kitti/`
+
+`python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_kitti_dense --beam 64 --dim 8 --batch_size 8 --mode kitti`
+
+--beam : Denotes the number of beam that ar allowed in the LiDAR. 
+
+--dim  : Sparsifies the outermost dimension of the range image (for CARLA, outermost dimesion is 1024). For more details on this, please refer to Section 5.2 of the paper.
 
 
-1. **Train on CARLA dataset**:  
-  Sparse Version
+2. **Train on CARLA dataset**:  
+Sparse Version
 
- ` cd carla/`
- 
+` cd carla/`
+
 ` python GLiDR_kitti.py --data data/carla/ --exp_name glidr_carla_sparse --beam 16 --dim 4 --batch_size 32 --mode carla`
 
-  Dense Version
+Dense Version
 
-  `cd carla/`
-  
-  `python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_carla_dense --beam 64 --dim 4 --batch_size 8 --mode carla`
+`cd carla/`
 
-   --beam : Denotes the number of beam that ar allowed in the LiDAR. 
-   --dim  : Sparsifies the outermost dimension of the range image (for CARLA, outermost dimesion is 512). For more details on this, please refer to Section 5.2 of the paper.
+`python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_carla_dense --beam 64 --dim 4 --batch_size 8 --mode carla`
+
+--beam : Denotes the number of beam that ar allowed in the LiDAR. 
+
+--dim  : Sparsifies the outermost dimension of the range image (for CARLA, outermost dimesion is 512). For more details on this, please refer to Section 5.2 of the paper.
+
+
+3. **Train on CARLA dataset**:  
+Sparse Version
+
+` cd carla/`
+
+` python GLiDR_kitti.py --data data/carla/ --exp_name glidr_carla_sparse --beam 16 --dim 4 --batch_size 32 --mode carla`
+
+Dense Version
+
+`cd carla/`
+
+`python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_carla_dense --beam 64 --dim 4 --batch_size 8 --mode carla`
+
+--beam : Denotes the number of beam that ar allowed in the LiDAR. 
+
+--dim  : Sparsifies the outermost dimension of the range image (for CARLA, outermost dimesion is 512). For more details on this, please refer to Section 5.2 of the paper.
 
 
 
@@ -89,8 +109,7 @@ We trained our models on a single NVIDIA A100 GPU. We have 2 version per dataset
 If you have any questions about our code or paper, kindly raise an issue on this repository.
 
 ### Acknowledgment
-We thank [Kartik Anand](https://github.com/k-styles) for assistance with the experiments. 
-Our source code is inspired from [VPD](https://github.com/wl-zhao/VPD) and [PixelFormer](https://github.com/ashutosh1807/PixelFormer). We thank their authors for publicly releasing the code.
+
 
 ### BibTeX (Citation)
 If you find our work useful in your research, please consider citing using:
