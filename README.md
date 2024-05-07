@@ -45,3 +45,31 @@ For KITTI, we generate the paired correspondence using a novel method that we de
 ``` bash
 
 
+##Training 
+We trained our models on 32 batch size using 8xNVIDIA A100 GPUs. Inside the `train_{kitti,nyu}.sh` set the `NPROC_PER_NODE` variable and `--batch_size` argument to the desired values as per your system resources. For our method we set them as `NPROC_PER_NODE=8` and `--batch_size=4` (resulting in a total batch size of 32). Afterwards, navigate to the `depth` directory by executing `cd depth` and follow the instructions:
+
+1. **Train on NYUv2 dataset**:  
+`bash train_nyu.sh`  
+
+1. **Train on KITTI dataset**:  
+`bash train_kitti.sh`
+
+### Contact
+If you have any questions about our code or paper, kindly raise an issue on this repository.
+
+### Acknowledgment
+We thank [Kartik Anand](https://github.com/k-styles) for assistance with the experiments. 
+Our source code is inspired from [VPD](https://github.com/wl-zhao/VPD) and [PixelFormer](https://github.com/ashutosh1807/PixelFormer). We thank their authors for publicly releasing the code.
+
+### BibTeX (Citation)
+If you find our work useful in your research, please consider citing using:
+``` bibtex
+@article{patni2024ecodepth,
+  title={ECoDepth: Effective Conditioning of Diffusion Models for Monocular Depth Estimation},
+  author={Patni, Suraj and Agarwal, Aradhye and Arora, Chetan},
+  journal={arXiv preprint arXiv:2403.18807},
+  year={2024}
+}
+```
+
+
