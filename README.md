@@ -39,20 +39,43 @@ conda activate GLiDR
 For training GLiDR we require paired correspondences for static and dynamic scans. These are available for [CARLA](https://github.com/dslrproject/dslr/tree/master/Data) and [ARD-16](https://github.com/dslrproject/dslr/tree/master/Data). 
 For KITTI, we generate the paired correspondence using a novel method that we develop in our paper. See our Supplementary material for precise details.
 
-- [CARLA] - The CARLA dataset consists of 15 correspondence numpy arrays (0..7 for training and the rest for testing) for training and testing the model. We use the first three numpy arrays(0,1,2) to train the model (due to time intensive persistence computation). We further test the model on 8 (8,9...15) numpy arrays.  For SLAM we use the 4 CARLA SLAM sequences made available. The data is available [here](https://github.com/dslrproject/dslr/tree/master/Data).
-- [KITTI] - For KITTI we use the KITTI Odometry sequences for training the model. We transform the 11 sequences into numpy files and make them available here. We use the sequence 8 for testing the model and the rest for training our model For SLAM we use all the Odometry sequences (0 to 10). The static-dynamic corresponding pairs for KITTI are available [here](https://www.kaggle.com/datasets/prashk1312/kitti-static-dynamic-correpsondence).
-- [ARD-16] - The ARD-16 dataset consists of 4 numpy arrays (0..3). We use three (0..2) numpy arrays for training our model and the fourth numpy array for testing our model. The data is available [here](https://github.com/dslrproject/dslr/tree/master/Data).
-``` bash
+- [CARLA] - The CARLA dataset consists of 15 correspondence numpy arrays (0..7 for training and the rest for testing) for training and testing the model. We use the first three numpy arrays(0,1,2) to train the model (due to time intensive persistence computation). We further test the model on 8 (8,9...15) numpy arrays.  For SLAM we use the 4 CARLA SLAM sequences made available. The data is available [here](https://github.com/dslrproject/dslr/tree/master/Data). Download them in the data/carla folder and split into 2 subfolders - static and dynamic. 
+- [KITTI] - For KITTI we use the KITTI Odometry sequences for training the model. We transform the 11 sequences into numpy files and make them available here. We use the sequence 8 for testing the model and the rest for training our model For SLAM we use all the Odometry sequences (0 to 10). The static-dynamic corresponding pairs for KITTI are available [here](https://www.kaggle.com/datasets/prashk1312/kitti-static-dynamic-correpsondence). Download them in the data/kitti folder and split into 2 subfolders - static and dynamic. 
+- [ARD-16] - The ARD-16 dataset consists of 4 numpy arrays (0..3). We use three (0..2) numpy arrays for training our model and the fourth numpy array for testing our model. The data is available [here](https://github.com/dslrproject/dslr/tree/master/Data). Download them in the data/ard folder and split into 2 subfolders - static and dynamic. 
 
 
-##Training 
-We trained our models on 32 batch size using 8xNVIDIA A100 GPUs. Inside the `train_{kitti,nyu}.sh` set the `NPROC_PER_NODE` variable and `--batch_size` argument to the desired values as per your system resources. For our method we set them as `NPROC_PER_NODE=8` and `--batch_size=4` (resulting in a total batch size of 32). Afterwards, navigate to the `depth` directory by executing `cd depth` and follow the instructions:
 
-1. **Train on NYUv2 dataset**:  
-`bash train_nyu.sh`  
+
+
+## Training 
+We trained our models on a single NVIDIA A100 GPU. We have 2 version per dataset - sparse and dense for training.  For KITTI and CARLA sparse and dense version consists of 16 and 64 beam respectively. For KITT the sparse and dense version consists of 8 and 16 beams respectively.
 
 1. **Train on KITTI dataset**:  
-`bash train_kitti.sh`
+  Sparse Version
+  `cd kitti/
+   python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_kitti_sparse --beam 16 --dim 8 --batch_size 32 --mode kitti`
+
+Dense Version
+  `cd kitti/
+   python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_kitti_dense --beam 64 --dim 8 --batch_size 8 --mode kitti`
+
+  --beam : Denotes the number of beam that ar allowed in the LiDAR. 
+  --dim  : Sparsifies the outermost dimension of the range image (for CARLA, outermost dimesion is 1024). For more details on this, please refer to Section 5.2 of the paper.
+
+
+1. **Train on CARLA dataset**:  
+  Sparse Version
+` cd carla/
+  python GLiDR_kitti.py --data data/carla/ --exp_name glidr_carla_sparse --beam 16 --dim 4 --batch_size 32 --mode carla`
+
+Dense Version
+`cd carla/
+ python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_carla_dense --beam 64 --dim 4 --batch_size 8 --mode carla`
+
+  --beam : Denotes the number of beam that ar allowed in the LiDAR. 
+  --dim  : Sparsifies the outermost dimension of the range image (for CARLA, outermost dimesion is 512). For more details on this, please refer to Section 5.2 of the paper.
+
+
 
 ### Contact
 If you have any questions about our code or paper, kindly raise an issue on this repository.
