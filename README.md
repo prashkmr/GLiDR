@@ -109,17 +109,19 @@ Dense Version
 If you have any questions about our code or paper, kindly raise an issue on this repository.
 
 ### Acknowledgment
+TBD
 
 
 ### BibTeX (Citation)
 If you find our work useful in your research, please consider citing using:
 ``` bibtex
-@article{patni2024ecodepth,
-  title={ECoDepth: Effective Conditioning of Diffusion Models for Monocular Depth Estimation},
-  author={Patni, Suraj and Agarwal, Aradhye and Arora, Chetan},
-  journal={arXiv preprint arXiv:2403.18807},
-  year={2024}
+@article{kumar2023glidr,
+  title={GLiDR: Topologically Regularized Graph Generative Network for Sparse LiDAR Point Clouds},
+  author={Kumar, Prashant and Bhat, Kshitij Madhav and Nadkarni, Vedang Bhupesh Shenvi and Kalra, Prem},
+  journal={arXiv preprint arXiv:2312.00068},
+  year={2023}
 }
+
 ```
 
 
