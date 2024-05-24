@@ -1,0 +1,7 @@
+Namespace(exp_name='temp', model='dgcnn', dataset='modelnet40', batch_size=2, test_batch_size=16, epochs=250, use_sgd=False, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='', data='/home/prashant/../scratch/prashant/martini-scratch-v1/data/kitti/scan/', mode='kitti', reload='', dim=8, beam=16)
+Using GPU : 0 from 1 devices
+Namespace(exp_name='temp', model='dgcnn', dataset='modelnet40', batch_size=2, test_batch_size=16, epochs=250, use_sgd=False, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='', data='/home/prashant/../scratch/prashant/martini-scratch-v1/data/kitti/scan/', mode='kitti', reload='', dim=8, beam=16)
+Using GPU : 0 from 1 devices
+Namespace(exp_name='temp', model='dgcnn', dataset='modelnet40', batch_size=1, test_batch_size=16, epochs=250, use_sgd=False, lr=0.001, momentum=0.9, no_cuda=False, seed=1, eval=False, num_points=1024, dropout=0.5, emb_dims=1024, k=20, model_path='', data='/home/prashant/../scratch/prashant/martini-scratch-v1/data/kitti/scan/', mode='kitti', reload='', dim=8, beam=16)
+Using GPU : 0 from 1 devices
+Train 0, loss: 109.944856
