@@ -53,12 +53,14 @@ We trained our models on a single NVIDIA A100 GPU. We have 2 version per dataset
 1. **Train on KITTI dataset**:  
 Sparse Version
 
+``` bash
 `cd kitti/`
 
 `python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_kitti_sparse --beam 16 --dim 8 --batch_size 32 --mode kitti`
-
+```
 Dense Version
 
+``` bash
 `cd kitti/`
 
 `python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_kitti_dense --beam 64 --dim 8 --batch_size 8 --mode kitti`
@@ -66,17 +68,19 @@ Dense Version
 --beam : Denotes the number of beam that ar allowed in the LiDAR. 
 
 --dim  : Sparsifies the outermost dimension of the range image (for CARLA, outermost dimesion is 1024). For more details on this, please refer to Section 5.2 of the paper.
-
+``` bash
 
 2. **Train on CARLA dataset**:  
+
 Sparse Version
-
+``` bash
 ` cd carla/`
-
+```
 ` python GLiDR_kitti.py --data data/carla/ --exp_name glidr_carla_sparse --beam 16 --dim 4 --batch_size 32 --mode carla`
 
 Dense Version
 
+``` bash
 `cd carla/`
 
 `python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_carla_dense --beam 64 --dim 4 --batch_size 8 --mode carla`
@@ -84,17 +88,19 @@ Dense Version
 --beam : Denotes the number of beam that ar allowed in the LiDAR. 
 
 --dim  : Sparsifies the outermost dimension of the range image (for CARLA, outermost dimesion is 512). For more details on this, please refer to Section 5.2 of the paper.
-
+```
 
 3. **Train on CARLA dataset**:  
 Sparse Version
 
+``` bash
 ` cd carla/`
 
 ` python GLiDR_kitti.py --data data/carla/ --exp_name glidr_carla_sparse --beam 16 --dim 4 --batch_size 32 --mode carla`
-
+```
 Dense Version
 
+``` bash
 `cd carla/`
 
 `python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_carla_dense --beam 64 --dim 4 --batch_size 8 --mode carla`
@@ -102,7 +108,7 @@ Dense Version
 --beam : Denotes the number of beam that ar allowed in the LiDAR. 
 
 --dim  : Sparsifies the outermost dimension of the range image (for CARLA, outermost dimesion is 512). For more details on this, please refer to Section 5.2 of the paper.
-
+``` 
 
 
 ### Contact
