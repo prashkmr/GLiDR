@@ -8,13 +8,11 @@
 <a href="https://arxiv.org/abs/2312.00068" style="margin-right: 20px;"><img src='https://img.shields.io/badge/Supplementary-CvF-blue' alt='IEEE Xplore Paper'></a>
 
 [Prashant Kumar](https://prashkmr.github.io)\*,
-[Kshitij Bhat](https://prashkmr.github.io),
+[Kshitij Bhat](https://kshitijbhat.github.io),
 [Vedang Nadkarni](https://scholar.google.com/citations?user=seg1E8AAAAAJ&hl=en),
 [Prem Kumar Kalra](https://www.cse.iitd.ac.in/~pkalra/)<br/>
 
 </div>
-
-![driving.png](assets/driving.png)
 
 
 
