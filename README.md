@@ -14,7 +14,7 @@
 
 </div>
 
-
+![GLiDR Poster](GLiDR_Poster.png)
 
 ## News
 - [Feb 2024] GLiDR accepted in CVPR'2024.
