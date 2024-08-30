@@ -1,24 +1,31 @@
 ## Evalaution For 16-beam results for KITTI using GliDR 
 
 Chamfer Distance
+``` bash
 
-`python eval_carla_baseline__chamfer.py --data [path to paired scan folder] --dim 8 --beam 16  --ae_weight model_80.t7 `
-
+python eval_carla_baseline__chamfer.py --data [path to paired scan folder] --dim 8 --beam 16  --ae_weight model_80.t7
+```
 
 JSD
 
-'python eval_carla_baseline_jsd.py --data  [path to paired scan folder] --dim 8 --beam 16  --ae_weight model_80.t7 '
-      
+``` bash
+
+python eval_carla_baseline_jsd.py --data  [path to paired scan folder] --dim 8 --beam 16  --ae_weight model_80.t7 
+```      
 
 RMSE
 
-'python eval_carla_baseline_rmse.py --data  [path to paired scan folder] --dim 8 --beam 16  --ae_weight model_80.t7 '
-      
+``` bash
+
+python eval_carla_baseline_rmse.py --data  [path to paired scan folder] --dim 8 --beam 16  --ae_weight model_80.t7 
+```      
 
 EMD
 
-'python eval_carla_baseline_emd.py --data [path to paired scan folder] --dim 8 --beam 16  --ae_weight model_80.t7 '
+``` bash
 
+python eval_carla_baseline_emd.py --data [path to paired scan folder] --dim 8 --beam 16  --ae_weight model_80.t7 
+```
 
 
 --beam : Denotes the number of beam that ar allowed in the LiDAR. 
@@ -36,23 +43,31 @@ MOVES works on the datasets in polar format - therefore we use dataset in polar 
 
 Chamfer Distance
 
-`python eval_carla_final_cd.py --data [path to the dataset in polar format]    --dim 8 --beam 16 --ae_weight gen_990.pth  --batch_size 64`
+``` bash
 
+python eval_carla_final_cd.py --data [path to the dataset in polar format]    --dim 8 --beam 16 --ae_weight gen_990.pth  --batch_size 64`
+```
 
 JSD
 
-'python eval_carla_final_rmse.py --data [path to the dataset in polar format]    --dim 8 --beam 16 --ae_weight gen_990.pth  --batch_size 64'
-      
+``` bash
+
+python eval_carla_final_rmse.py --data [path to the dataset in polar format]    --dim 8 --beam 16 --ae_weight gen_990.pth  --batch_size 64
+```      
 
 RMSE
 
-'ppython eval_carla_final_jsd.py --data [path to the dataset in polar format]    --dim 8 --beam 16 --ae_weight gen_990.pth  --batch_size 64 '
-      
+``` bash
+
+python eval_carla_final_jsd.py --data [path to the dataset in polar format]    --dim 8 --beam 16 --ae_weight gen_990.pth  --batch_size 64
+```      
 
 EMD
 
-'python eval_carla_final_emd.py --data [path to the dataset in polar format]    --dim 8 --beam 16 --ae_weight gen_990.pth  --batch_size 64'
+``` bash
 
+python eval_carla_final_emd.py --data [path to the dataset in polar format]    --dim 8 --beam 16 --ae_weight gen_990.pth  --batch_size 64
+```
 
 
 --beam : Denotes the number of beam that ar allowed in the LiDAR. 
