@@ -19,6 +19,7 @@
 
 
 ## News
+- [Aug 2024] Evaluation code published.
 - [Feb 2024] GLiDR accepted in CVPR'2024.
 
 
