@@ -4,7 +4,7 @@
 
 Chamfer Distance
 
-`python eval_carla_baseline_nosave_cd.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 16 --ae_weight 16/16-128/model_99_prev.t7   --batch_size 32`
+' python eval_carla_baseline_nosave_cd.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 16 --ae_weight 16/16-128/model_99_prev.t7   --batch_size 32 `
 
 
 JSD
