@@ -1,0 +1,9 @@
+emd - python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 64 --ae_weight 64/gen_90.pth --batch_size 16
+
+mmd -  python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 64 --ae_weight 64/gen_90.pth --batch_size 128
+
+rmse - python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 64 --ae_weight 64/gen_90.pth --batch_size 128
+
+jsd -  python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 64 --ae_weight 64/gen_90.pth --batch_size 64
+
+cd -  python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 64 --ae_weight 64/gen_90.pth --batch_size 16

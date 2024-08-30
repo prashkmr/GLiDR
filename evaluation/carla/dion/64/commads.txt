@@ -1,0 +1,5 @@
+emd - python eval_carla_baseline_nosave_soft.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 64 --ae_weight 64/model_85.t7   --batch_size 16
+rmse - python eval_carla_baseline_nosave_soft.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 64 --ae_weight 64/model_85.t7   --batch_size 16
+mmd - python eval_carla_baseline_nosave_soft.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 64 --ae_weight 64/model_85.t7   --batch_size 16
+jsd - python eval_carla_baseline_nosave_soft.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 64 --ae_weight 64/model_85.t7   --batch_size 16
+cd - 

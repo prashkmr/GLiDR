@@ -1,0 +1,10 @@
+emd - python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 16 --ae_weight 16/gen_105.pth --batch_size 64
+
+mmd -  python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 16 --ae_weight 16/gen_105.pth --batch_size 64
+		MMD is very sensitive ot batch_Size
+
+rmse - python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 16 --ae_weight 16/gen_105.pth --batch_size 64
+
+jsd -  python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 16 --ae_weight 16/gen_105.pth --batch_size 64
+
+cd -  python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/DSLR/ --dim 4 --beam 16 --ae_weight 16/gen_105.pth --batch_size 64

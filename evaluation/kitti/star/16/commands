@@ -1,0 +1,3 @@
+emd - python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/kitti/polar/    --dim 8 --beam 16 --ae_weight 16/gen_990.pth  --batch_size 16
+
+rmse,cd,jsd  -  python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/kitti/polar/    --dim 8 --beam 16 --ae_weight 16/gen_990.pth  --batch_size 16

@@ -1,0 +1,3 @@
+cd,jsd-rmse - python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/kitti/polar/    --dim 8 --beam 64 --ae_weight 64/gen_960.pth  --batch_size 16
+
+emd - python eval_carla_final_.py --data ~/../scratch/prashant/martini-scratch-v1/data/kitti/polar/    --dim 8 --beam 64 --ae_weight 64/gen_960.pth  --batch_size 16
