@@ -1,16 +1,20 @@
 <div align="center">
-<h1>GLiDR: Topologically Regularized Graph Generative Network for Sparse LiDAR Point Clouds</h1>
+<h1> Persona Identification in E-Commerce with Scarce Labels and In-Context Graph Learning </h1>
 
-**CVPR 2024**  
+**ACK SIGKDD 2025**  
 <a href='https://kshitijbhat.github.io/glidr/' style="margin-right: 20px;"><img src='https://img.shields.io/badge/Project Page-GLiDR-darkgreen' alt='Project Page'></a>
 <a href="https://arxiv.org/abs/2312.00068" style="margin-right: 20px;"><img src='https://img.shields.io/badge/Paper-arXiv-maroon' alt='arXiv page'></a>
 <a href="https://arxiv.org/abs/2312.00068" style="margin-right: 20px;"><img src='https://img.shields.io/badge/Paper-CvF-blue' alt='IEEE Xplore Paper'></a>
 <a href="https://arxiv.org/abs/2312.00068" style="margin-right: 20px;"><img src='https://img.shields.io/badge/Supplementary-CvF-blue' alt='IEEE Xplore Paper'></a>
 
-[Prashant Kumar](https://prashkmr.github.io)\*,
-[Kshitij Bhat](https://prashkmr.github.io),
-[Vedang Nadkarni](https://scholar.google.com/citations?user=seg1E8AAAAAJ&hl=en),
-[Prem Kumar Kalra](https://www.cse.iitd.ac.in/~pkalra/)<br/>
+[Anjali Gupta]([https://prashkmr.github.io](https://anjaliakg17.github.io/about/))\*,
+[Prashant Kumar](https://prashkmr.github.io),
+[Aniket Mishra](https://www.linkedin.com/in/aniket-mishra-bab8a81b5),
+[Abhishekh Singh](https://www.linkedin.com/in/iasingh)
+[Surender Kumar](https://www.linkedin.com/in/surenderk)
+[Muthusamy Chelliah](https://www.linkedin.com/in/muthusamy-chelliah-28b3b0)
+[Abhijnan Chakraborty](https://cse.iitkgp.ac.in/~abhijnan/)
+[Sayan Ranu](https://www.cse.iitd.ac.in/~sayan/)<br/>
 
 </div>
 
