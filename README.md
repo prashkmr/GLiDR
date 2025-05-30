@@ -1,3 +1,4 @@
+<div align="center">
 <h1>GLiDR: Topologically Regularized Graph Generative Network for Sparse LiDAR Point Clouds</h1>
 
 **CVPR 2024**  
