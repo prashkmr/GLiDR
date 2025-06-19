@@ -1,22 +1,22 @@
 <div align="center">
 <h1>GLiDR: Topologically Regularized Graph Generative Network for Sparse LiDAR Point Clouds</h1>
 
-**CVPR 2024**  
+**CVPR 2024**
+
 <a href='https://kshitijbhat.github.io/glidr/' style="margin-right: 20px;"><img src='https://img.shields.io/badge/Project Page-GLiDR-darkgreen' alt='Project Page'></a>
 <a href="https://arxiv.org/abs/2312.00068" style="margin-right: 20px;"><img src='https://img.shields.io/badge/Paper-arXiv-maroon' alt='arXiv page'></a>
-<a href="https://arxiv.org/abs/2312.00068" style="margin-right: 20px;"><img src='https://img.shields.io/badge/Paper-CvF-blue' alt='IEEE Xplore Paper'></a>
-<a href="https://arxiv.org/abs/2312.00068" style="margin-right: 20px;"><img src='https://img.shields.io/badge/Supplementary-CvF-blue' alt='IEEE Xplore Paper'></a>
+<a href="https://www.youtube.com/watch?v=oqJLJL-mYqg" style="margin-right: 20px;"><img src='https://img.shields.io/badge/Video-yt?logo=youtube&logoColor=red&labelColor=grey&color=grey' alt='Video'></a>
+<a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Kumar_GLiDR_Topologically_Regularized_Graph_Generative_Network_for_Sparse_LiDAR_Point_CVPR_2024_paper.pdf" style="margin-right: 20px;"><img src='https://img.shields.io/badge/Paper-CvF-blue' alt='IEEE Xplore Paper'></a>
+<a href="https://openaccess.thecvf.com/content/CVPR2024/html/Kumar_GLiDR_Topologically_Regularized_Graph_Generative_Network_for_Sparse_LiDAR_Point_CVPR_2024_paper.html" style="margin-right: 20px;"><img src='https://img.shields.io/badge/Supplementary-CvF-blue' alt='IEEE Xplore Paper'></a>
 
 [Prashant Kumar](https://prashkmr.github.io)\*,
-[Kshitij Bhat](https://prashkmr.github.io),
+[Kshitij Bhat](https://kshitijbhat.github.io),
 [Vedang Nadkarni](https://scholar.google.com/citations?user=seg1E8AAAAAJ&hl=en),
 [Prem Kumar Kalra](https://www.cse.iitd.ac.in/~pkalra/)<br/>
 
 </div>
 
-![driving.png](assets/driving.png)
-
-
+![GLiDR Poster](GLiDR_Poster.png)
 
 
 
@@ -107,18 +107,17 @@ python GLiDR_kitti.py --data data/kitti/ --exp_name glidr_carla_dense --beam 64 
 ### Contact
 If you have any questions about our code or paper, kindly raise an issue on this repository.
 
-### Acknowledgment
-TBD
-
 
 ### BibTeX (Citation)
 If you find our work useful in your research, please consider citing using:
 ``` bibtex
-@article{kumar2023glidr,
-  title={GLiDR: Topologically Regularized Graph Generative Network for Sparse LiDAR Point Clouds},
-  author={Kumar, Prashant and Bhat, Kshitij Madhav and Nadkarni, Vedang Bhupesh Shenvi and Kalra, Prem},
-  journal={arXiv preprint arXiv:2312.00068},
-  year={2023}
+@InProceedings{Kumar_2024_CVPR,
+    author    = {Kumar, Prashant and Bhat, Kshitij Madhav and Nadkarni, Vedang Bhupesh Shenvi and Kalra, Prem},
+    title     = {GLiDR: Topologically Regularized Graph Generative Network for Sparse LiDAR Point Clouds},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2024},
+    pages     = {15152-15161}
 }
 
 ```
